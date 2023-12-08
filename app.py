@@ -5,7 +5,7 @@ import pickle
 from sklearn.preprocessing import StandardScaler
 from PIL import Image
 
-with open('C:/Users/rohit/Downloads/app/catboost_model.pkl', 'rb') as file:
+with open('catboost_model.pkl', 'rb') as file:
     catboost_regressor = pickle.load(file)
 
 def preprocess(sales_price, base_price, featured_item, on_display, scaler):
